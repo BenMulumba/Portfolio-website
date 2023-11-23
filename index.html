@@ -8,27 +8,19 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 	</head>
 	
 	<body class="is-preload">
-		<div class='navigation-bar'>
+		<div class='nav navigation-bar justify-content-center p-4'>
 			<ul>
 				<li><a href='#home'>Home</a></li>
-				<li><a href='#support'>Support</a></li>
 				<li><a href='#project'>Projects</a></li>
 				<li><a href='#cv'>My&nbsp;Cv</a></li>
 				<li><a href='#contact'> Contact </a></li>
-				<li><a href='#about'>About</a></li>
-
-				
-			</ul>
-			
-			<div class='join'>
-				<ul>
-					<li> <a href='#'>login</a></li>
-					<li> <a href='#'>join</a></li>
-				</ul>
-			</div>
+				<li><a href='#about'>About</a></li>				
+			</ul>			
 		</div>
 	
 		
@@ -98,7 +90,7 @@
 								<section>
 									<span class="icon solid style2 major fa-chart-bar"></span>
 									<h3>Building a timer in python</h3>
-									<p><a><image src='images\python-countdown-timer.webp' height="300px" width="250px" > </a></p>
+									<p><a href='https://github.com/BenMulumba/PythonTkinterTimer' target='_blank'> <image src='images\python-countdown-timer.webp' height="300px" width="250px" > </a></p>
 								</section>
 
 								<!--CSV file analysis-->
@@ -112,7 +104,7 @@
 								<section>
 									<span class="icon solid style2 major fa-chart-bar"></span>
 									<h3>e_commerce website</h3>
-									<p><a><image src='images\e commerce.png' height='300px' width='250px'></a></p>
+									<p><a href='https://github.com/BenMulumba/e-commerce-web-app'><image src='images\e commerce.png' height='300px' width='250px'></a></p>
 								</section>
 
 								<section>
@@ -135,8 +127,8 @@
 				<!-- Get in touch (seven)-->
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
+							<u><h2>Need a service? Get in touch with me</h2><br></u>
+							<form id="contact_form" method="post" action="#">
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
@@ -155,37 +147,32 @@
 									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
 								</ul>
 							</form>
+
+							<!-- Automated message-->
+							
+							<div id="success_Message" style='display:none; color:white; font-size:20px; background-color:#649e70'>
+								Thank you for your message. We'll get back to you soon.
+							</div>
+
+							<div id='error_Message' style="display:none; color:red">
+								Oops! Something went wrong please try again.
+							</div>
 						</div>
 
-						<!-- Support-->
-						<section id='support'>
-							<div class='mode_of_paiment'>
-								<h2>Send your support</h2>
-									<ul style='text-align: center';>
-										<li><a href='#'><image src='images\mpesa.png' height='50px' width='70px'></a></li>
-										<li><a href='#'><image src='images\paypal_kzfp.png' height='50px' width='70px'></a></li>
-										<li><a href='#'><image src='images\visa-600.png' height='50px' width='70px'></a></li>
-									</ul>
-							<div>
-						</section>
-					</section>
+						
 
 				<!-- social media -->
 				<section id='contact'>
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
+					<footer class="wrapper style1 align-center p-3 bg-light"><br>
+						<h2>Connect with me</h2>
+						<div class="inner p-5">
 							<ul class="icons">
-								<li> <a class='icon brands style2 fa-twitter'><span class='label'>BMB</span></a>gg</li>
-								<li>lidif</li>
-								<li>lidif</li>
-								<li>lidif</li>
-								<li>lidif</li>
-								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a>Twitter</li>
+								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label"></span></a></li>
 								<li><a href="https://www.facebook.com/bmbimprov?mibextid=LQQJ4d" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="https://instagram.com/ben.is_my_name_?igshid=OGQ5ZDc2ODk2ZA==" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
 								<li><a href="https://www.linkedin.com/in/ben-mulumba-a10037232" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="mailto:bmulumba76@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://github.com/BenMulumba" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
 							</ul>
 						</div>
 					</footer>
@@ -194,6 +181,7 @@
 			</div>
 
 		<!-- Scripts -->
+		<script src='assets\js\alertmessage.js'></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
